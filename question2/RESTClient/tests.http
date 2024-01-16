@@ -1,0 +1,36 @@
+@baseUrl = http://localhost:3000/index
+### Create a place
+POST  {{baseUrl}}/lieu
+Content-Type: application/json
+
+{
+    "nom": "Paris",
+    "description": "capital de la france"
+}
+
+### create a second place
+POST  {{baseUrl}}/lieu
+Content-Type: application/json
+
+{
+    "nom": "Pekin",
+    "description": "capital de la chine"
+}
+
+### Create a user
+POST  {{baseUrl}}/user
+Content-Type: application/json
+
+{
+    "nom": "TokyoCloud",
+    "email": "chuqi.zhang@student.vinci.be"
+}
+
+### Like a place
+POST  {{baseUrl}}/favorite
+Content-Type: application/json
+
+{
+    "user": "e5ff7f7b-e32e-4fcd-b65d-9772c739d619",
+    "location": "f2c05f6d-769c-4f42-9007-8b436def7746"
+}
